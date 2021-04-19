@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%-include('layout/head')%>
+</head>
+<body>
+    <header>
+        <%-include('layout/header')%>
+    </header>
+    <main>
+        <% mydi.forEach(el=>{%>
+        <a href="/details/<%=el.id%>"><h1><%=el.name%></h1></a>
+        <!-- <img src="<%=el.img%>" alt="">
+        <p><%=el.level%></p> -->
+       
+    <%})%>
+    </main>
+    <footer>
+        <%-include('layout/footer')%>
+    </footer>
+</body>
+</html>

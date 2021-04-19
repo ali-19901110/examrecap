@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('layout/head') %>
+
+</head>
+<body>
+    <header>
+        <h1>welcome to my websit</h1>
+      <%- include('layout/header') %>
+
+    </header>
+        <form action="" method="POST">
+        <input type="text" name="search" value="">
+        <button>search</button>
+    </form>
+    <% if (flag){%>
+    <div>
+    <h1><%=data.name%></h1>
+    <img src="<%=data.img%>" alt="">
+    <p><%=data.level%></p>
+</div>
+<%}%>
+   
+    <main></main>
+    <footer>
+        <%-include('layout/footer')%>
+    </footer>
+</body>
+</html>
